@@ -1,0 +1,23 @@
+# Odoo runtime files
+.odoo/
+
+# Claude configuration (optional - remove if you want to version control)
+.claude/
+
+# Python
+__pycache__/
+*.py[cod]
+*.class
+*.so
+.Python
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
