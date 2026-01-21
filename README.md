@@ -2,14 +2,20 @@
 
 Odoo 19 Community Project
 
+## Version Info
+
+- **Odoo Version:** 19 (CE)
+- **Created on:** 2026-01-13 02:42:10
+
 ## Quick Start
 
 ```bash
-# Start the server
-./start.sh
+# Start the server manually
+cd /home/suisse
+/home/shared/odoo19/venv/bin/python3 /home/shared/odoo19/odoo/odoo-bin -c .odoo/odoo.conf
 
 # Access Odoo
-http://localhost:8091
+http://localhost:8069
 ```
 
 ## Credentials
@@ -30,7 +36,6 @@ suisse/
 │   ├── odoo.conf      # Configuration
 │   ├── logs/          # Log files
 │   └── data/          # Filestore
-├── .odoo_version      # Version tracking
 └── your_module/       # Custom addons (project root)
 ```
 
@@ -47,7 +52,7 @@ mkdir my_custom_module
 ## Service Management (Ubuntu)
 
 ```bash
-# Using systemd (if configured)
+# Using systemd
 sudo systemctl start suisse
 sudo systemctl stop suisse
 sudo systemctl restart suisse
@@ -64,7 +69,3 @@ Edit `.odoo/odoo.conf` to customize:
 - Database settings
 - Worker configuration
 - Log levels
-
----
-
-Generated with [Claude Code](https://claude.com/claude-code)
